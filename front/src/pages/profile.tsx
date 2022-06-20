@@ -1,5 +1,5 @@
 import '../style/profile.css';
-import { Grid, Container } from '@material-ui/core'
+import { Grid, Container } from '@mui/material'
 import { userInfo } from '../models/models'
 
 function profile() {
