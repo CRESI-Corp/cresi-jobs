@@ -7,7 +7,7 @@ import Contact from "./pages/contact";
 
 function App() {
   return (
-    <div className="Cresi">
+    <div className="Cresi" class="flex flex-row">
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home />} />
