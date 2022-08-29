@@ -28,7 +28,7 @@ function profile() {
           <p class="text-3xl md:text-5xl font-bold p-2 mx-6 mt-12 md:mt-28 mb-8">Mon Compte</p>
         </div>
       </header>
-      <div class="flex flex-col md:grid grid-cols-3 gap-2 place-items-center p-8 md:leading-10 md:tracking-wide lg:text-xl lg:mx-12">
+      <div class="flex flex-col md:grid grid-cols-3 gap-2 place-items-center p-4 md:p-8 md:leading-10 md:tracking-wide lg:text-xl lg:mx-12">
         <div className='userInfo' class="col-span-1">
           <a href={item.href}><img src={item.image[0]} className='Images' id={"Image"} class="rounded-full w-2/3 md:w-1/2 lg:w-1/2"/></a>
           <div class="flex flex-row pt-6 text-Secondary font-bold text-xl lg:text-2xl">
