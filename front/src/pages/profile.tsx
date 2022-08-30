@@ -25,7 +25,7 @@ function profile() {
       <header>
         {/*<h1 className="h1" >Bonjour et bienvenue chez Cresi Jobs</h1>*/}
         <div className="grid-header">
-          <p class="text-3xl md:text-5xl font-bold p-2 mx-6 mt-12 md:mt-28 mb-8">Mon Compte</p>
+          <p class="text-3xl md:text-5xl font-bold text-Primary p-2 mx-6 mt-12 md:mt-28 mb-8">Profil de {item.firstName} {item.lastName}</p>
         </div>
       </header>
       <div class="flex flex-col md:grid grid-cols-3 gap-2 place-items-center p-4 md:p-8 md:leading-10 md:tracking-wide lg:text-xl lg:mx-12">
