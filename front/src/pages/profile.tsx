@@ -1,9 +1,7 @@
-import '../style/profile.css';
-import { Grid, Container } from '@mui/material'
 import { userInfo } from '../models/models'
 
 function profile() {
-  const item: userInfo =
+  const userInfo: userInfo =
   {
     firstName: 'Sarah',
     lastName: 'Connor',
@@ -21,69 +19,34 @@ function profile() {
   }
 
   return (
-    <body class="">
+    <div className="">
       <header>
-        {/*<h1 className="h1" >Bonjour et bienvenue chez Cresi Jobs</h1>*/}
         <div className="grid-header">
-          <p class="text-3xl md:text-5xl font-bold text-Primary p-2 mx-6 mt-12 md:mt-28 mb-8">Profil de {item.firstName} {item.lastName}</p>
+          <p className="text-3xl md:text-5xl font-bold text-Primary p-2 mx-6 mt-12 md:mt-28 mb-8">Profil de {userInfo.firstName} {userInfo.lastName}</p>
         </div>
       </header>
-      <div class="flex flex-col md:grid grid-cols-3 gap-2 place-items-center p-4 md:p-8 md:leading-10 md:tracking-wide lg:text-xl lg:mx-12">
-        <div className='userInfo' class="col-span-1">
-          <a href={item.href}><img src={item.image[0]} className='Images' id={"Image"} class="rounded-full w-2/3 md:w-1/2 lg:w-1/2"/></a>
-          <div class="flex flex-row pt-6 text-Secondary font-bold text-xl lg:text-2xl">
-            <h2 className='firstName' id={item.firstName} class="pr-1">{item.firstName}</h2>
-            <h2 className='lastName' id={item.lastName}>{item.lastName}</h2>
+      <div className="flex flex-col md:grid grid-cols-3 gap-2 place-userInfos-center p-4 md:p-8 md:leading-10 md:tracking-wide lg:text-xl lg:mx-12">
+        <div className="userInfo col-span-1">
+          <a href={userInfo.href}><img src={userInfo.image[0]} className="rounded-full w-2/3 md:w-1/2 lg:w-1/2" id={"Image"} /></a>
+          <div className="flex flex-row pt-6 text-Secondary font-bold text-xl lg:text-2xl">
+            <h2 className="firstName pr-1" id={userInfo.firstName}>{userInfo.firstName}</h2>
+            <h2 className="lastName" id={userInfo.lastName}>{userInfo.lastName}</h2>
           </div>
-          <h2 className='dob'>{item.dob}</h2>
-          <p className='phoneNumber'>{item.phoneNumber}</p>
-          <p className='email'>{item.email}</p>
-          <p className='title'>{item.school}</p>
+          <h2 className="dob">{userInfo.dob}</h2>
+          <p className="phoneNumber">{userInfo.phoneNumber}</p>
+          <p className="email">{userInfo.email}</p>
+          <p className="title">{userInfo.school}</p>
         </div>
-        <div className='aboutUser' class="col-span-2">
-          <h2 className='attentionCatcher' class="text-Secondary font-bold text-xl lg:text-3xl">About me</h2>
-          <div className='Diploma'>{item.diploma}</div>
-          <div className='Future'> dream position : {item.desiredWork}</div>
-          <div className='aboutMe'>{item.aboutMe}</div>
-          <div className='resume'>CV: à modifier avec une liseuse pdf du CV ou toute autre idée</div>
+        <div className="aboutUser col-span-2">
+          <h2 className="attentionCatcher text-Secondary font-bold text-xl lg:text-3xl">About me</h2>
+          <div className="Diploma">{userInfo.diploma}</div>
+          <div className="Future"> dream position : {userInfo.desiredWork}</div>
+          <div className="aboutMe" contentEditable={true}>{userInfo.aboutMe}</div>
+          <div className="resume">CV: à modifier avec une liseuse pdf du CV ou toute autre idée</div>
         </div>
       </div>
-      {/*
-      <Container>
-        <Grid container spacing={2}>
-          <Grid item xs={4}>
-            <Grid container spacing={0}>
-              <div className='userInfo'>
-                <Grid item xs={6}>
-                  <a href={item.href}><img src={item.image[0]} className='Images' id={"Image"} class="rounded-full"/></a>
-                </Grid>
-                <Grid item xs={6}>
-                  <h2 class="text-purple-600" className='firstName' id={item.firstName}>{item.firstName}</h2>
-                  <h2 className='lastName' id={item.lastName}>{item.lastName}</h2>
-                  <h2 className='dob'>{item.dob}</h2>
-                  <p className='phoneNumber'>{item.phoneNumber}</p>
-                  <p className='email'>{item.email}</p>
-                  <p className='title'>{item.school}</p>
-                </Grid>
-              </div>
-            </Grid>
-          </Grid>
-          <Grid item xs={8}>
-            <div className='aboutUser'>
-              <h2 className='attentionCatcher'>About me</h2>
-              <div className='Diploma'>{item.diploma}</div>
-              <div className='Future'> dream position : {item.desiredWork}</div>
-              <br />
-              <div className='aboutMe'>{item.aboutMe}</div>
-              <br/>
-              <div className='resume'>CV: à modifier avec une liseuse pdf du CV ou toute autre idée</div>
-            </div>
-          </Grid>
-        </Grid>
-      </Container>
-  */}
 
-    </body >
+    </div >
   );
 }
 
