@@ -2,7 +2,7 @@ import { Grid, Container } from '@mui/material'
 
 function connexion() {
     return (
-        <h1>Page de connexion</h1>
+        <h1 className="text-Text text-3xl font-bold">Page de connnexion</h1>
     );
 }
 
