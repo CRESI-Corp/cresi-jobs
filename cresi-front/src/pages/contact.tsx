@@ -1,4 +1,3 @@
-import { Grid, Container } from '@mui/material'
 import ContactForm from '../components/contactForm'
 
 function contactPage() {

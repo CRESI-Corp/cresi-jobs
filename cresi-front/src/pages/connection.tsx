@@ -1,5 +1,4 @@
 import react from 'react';
-import { Grid, Container } from '@mui/material'
 import {Link} from "react-router-dom"
 
 function connectionPage() {
