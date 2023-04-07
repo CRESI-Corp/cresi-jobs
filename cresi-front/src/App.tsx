@@ -8,7 +8,7 @@ import Account from './pages/account'
 
 function App() {
   return (
-    <div className="Cresi flex flex-row">
+    <div className="interface">
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
