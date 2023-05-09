@@ -1,6 +1,6 @@
 function connexion() {
     return (
-        <h1 className="">Page d'accueil</h1>
+        <h1 className="title">Page d'accueil</h1>
     );
 }
 

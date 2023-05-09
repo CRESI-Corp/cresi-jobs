@@ -7,7 +7,7 @@ body {
 body .interface {
   display: flex;
   flex-direction: row;
-  gap: 8rem;
+  gap: 3rem;
 }
 
 code {
