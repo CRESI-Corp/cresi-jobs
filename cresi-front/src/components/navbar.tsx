@@ -1,16 +1,10 @@
 import { Link } from "react-router-dom";
 import { UserActions } from "./navbar/navbarComponents"
 
-import '../styles/navbar.css';
+import '../styles/navbar/navbar.css';
 import React, { useState } from "react";
 
 import ico_head from '../assets/ico_head.png';
-import ico_myaccount from '../assets/ico_myaccount.png';
-import ico_candidature from '../assets/ico-candidature.png';
-import ico_offers from '../assets/ico-offers.png';
-import ico_asso from '../assets/ico-asso.png';
-import ico_notif from '../assets/ico-notif.png';
-import ico_contact from '../assets/ico-contact.png';
 
 
 const Navbar: React.FC = () => {
