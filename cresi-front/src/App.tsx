@@ -8,16 +8,21 @@ import Account from './pages/account'
 
 function App() {
   return (
-    <div className="interface">
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/profile/:id' element={<Profile />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/connection' element={<Connection />} />
-        <Route path='/account' element={<Account />} />
-      </Routes>
-    </div>
+    <body>
+      <header>
+        <Navbar />
+      </header>
+
+      <div className="Cresi">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/profile/:id' element={<Profile />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/connection' element={<Connection />} />
+          <Route path='/account' element={<Account />} />
+        </Routes>
+      </div>
+    </body>
   );
 }
 

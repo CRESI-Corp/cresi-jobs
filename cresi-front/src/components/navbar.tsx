@@ -1,7 +1,8 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { UserActions } from "./navbar/navbarComponents"
 
 import '../styles/navbar.css';
+import React, { useState } from "react";
 
 import ico_head from '../assets/ico_head.png';
 import ico_myaccount from '../assets/ico_myaccount.png';
@@ -12,31 +13,21 @@ import ico_notif from '../assets/ico-notif.png';
 import ico_contact from '../assets/ico-contact.png';
 
 
-function Navbar() {
+const Navbar: React.FC = () => {
+
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className={`sidebar ${isOpen ? "open" : "close"}`}>
-      <header>
-        <div className="image-text">
-          <span className="image">
-            <a href="/account">
-              <img src={ico_head} alt="ico_head" className="ico_head" />
-            </a>
-          </span>
+    <nav>
 
-          <div className="text logo-text">
-            <a href="#">
-              <span className="profession" >Déconnexion</span>
-            </a>
-            <a href="#">
-              <i className="bx bx-log-out icon" ></i>
-            </a>
-          </div>
-        </div>
-
-        <i className="bx bx-chevron-right toggle" onClick={() => setIsOpen(!isOpen)}></i>
-      </header>
+      <UserActions profilePicture={ico_head}
+        isOpen={isOpen}
+        callback={handleToggle}
+      />
 
       <div className="menu-bar">
         <div className="menu">
@@ -44,8 +35,8 @@ function Navbar() {
             <li className="nav-link">
               <a href="/account">
                 <i className="bx bx-user icon" ></i>
-              
-              <span className="text nav-text">Mon compte</span>
+
+                <span className="text nav-text">Mon compte</span>
               </a>
             </li>
 
@@ -88,6 +79,7 @@ function Navbar() {
           </li>
         </div>
       </div>
+
     </nav>
   );
 }
