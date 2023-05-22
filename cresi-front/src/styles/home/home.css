@@ -1,0 +1,13 @@
+.nav_buttonins_home {
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 1680px;
+height: 100px;
+left: 160px;
+top: 272px;
+}
