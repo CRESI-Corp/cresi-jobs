@@ -12,48 +12,48 @@ function connectionPage() {
                 if connection page do not display navbar 
              */}
 
-            <div class="all">
+            <div className="all">
                 <form action="" method="post" class="">
-                    <h1 class="titre">Connexion</h1>
-                    <div class="">
-                        <div class="ent">
+                    <h1 className="titre">Connexion</h1>
+                    <div className="">
+                        <div className="ent">
                             <p class="">Connexion avec l'ENT</p>
-                            <img class='entlogo' src={ent}></img>
+                            <img className='entlogo' src={ent}></img>
                         </div>
-                        <div class="micro">
-                            <img class='micrologo' src={microsoft}></img>
+                        <div className="micro">
+                            <img className='micrologo' src={microsoft}></img>
                         </div>
-                        <div class="ou">
+                        <div className="ou">
                             <p>ou</p>
                         </div>
-                        <div class="mail">
-                            <input type="text" placeholder='Adresse email' class=''/>
-                            <i class="fa-solid fa-user-secret"></i>
+                        <div className="mail">
+                            <input type="email" placeholder='Adresse email' className=''/>
+                            <i className="fa-solid fa-user-secret"></i>
                         </div>
-                        <div class='mdp'>
-                            <input type="text" placeholder='Mot de passe' class=""/>
-                            <i class="fa-solid fa-user-secret"></i>
+                        <div className='mdp'>
+                            <input type="password" placeholder='Mot de passe' className=""/>
+                            <i className="fa-solid fa-user-secret"></i>
                         </div>
                     </div>
-                    <div class='autre'>
-                        <div class="souvenir">
-                            <input type="checkbox" name="rememberMe" id="rememberMe" placeholder='rememberMe' class=''/>
-                            <label htmlFor="rememberMe" class="">Se souvenir de moi</label>
+                    <div className='autre'>
+                        <div className="souvenir">
+                            <input type="checkbox" name="rememberMe" id="rememberMe" placeholder='rememberMe' className=''/>
+                            <label htmlFor="rememberMe" className="">Se souvenir de moi</label>
                         </div>
                         <Link to="/">
-                            <div  class="oublie">
+                            <div  className="oublie">
                                 Mot de passe oublié ?
                             </div>
                         </Link>
                         
                     </div>
 
-                    <div class='connection'>
-                        <input type="button" value="Je me connecte" class=""/>
+                    <div className='connection'>
+                        <input type="button" value="Je me connecte" className=""/>
                     </div>
 
                     <Link to="/registration">
-                        <div class="registration">
+                        <div className="registration">
                             Nouveau sur la plateforme ? C'est par ici !
                         </div>
                     </Link>

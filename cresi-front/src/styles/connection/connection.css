@@ -42,6 +42,23 @@
     border-radius: 1.25rem;
 }
 
+.ent p {
+    width: 16.313rem;
+    height: 1.813rem;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+
+    color: #34495E;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 .micro {
     display: flex;
     flex-direction: row;
@@ -62,8 +79,6 @@
 .micrologo {
     width: 1.313rem;
     height: 1.313rem;
-
-    background-image: ;
 
     flex: none;
     order: 0;
@@ -98,11 +113,20 @@
 }
 
 .mail input {
-    position: absolute;
+    position: relative;
     width: 10.75rem;
     height: 1.813rem;
-    left: 45.75rem;
-    top: 31.875rem;
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -111,6 +135,7 @@
     line-height: 1.813rem;
 
     color: #C2C2C2;
+    border: none;
 }
 
 .mail i {
