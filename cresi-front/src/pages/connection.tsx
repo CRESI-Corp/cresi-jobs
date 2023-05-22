@@ -28,11 +28,11 @@ function connectionPage() {
                         </div>
                         <div className="mail">
                             <input type="email" placeholder='Adresse email' className=''/>
-                            <i className="fa-solid fa-user-secret"></i>
+                            <i class='bx bxs-envelope'></i>
                         </div>
                         <div className='mdp'>
                             <input type="password" placeholder='Mot de passe' className=""/>
-                            <i className="fa-solid fa-user-secret"></i>
+                            <i class='bx bxs-lock-alt'></i>
                         </div>
                     </div>
                     <div className='autre'>
@@ -50,6 +50,7 @@ function connectionPage() {
 
                     <div className='connection'>
                         <input type="button" value="Je me connecte" className=""/>
+                        <i class='bx bx-right-arrow-alt'></i>
                     </div>
 
                     <Link to="/registration">

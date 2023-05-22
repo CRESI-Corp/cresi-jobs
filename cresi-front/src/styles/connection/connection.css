@@ -113,20 +113,11 @@
 }
 
 .mail input {
-    position: relative;
-    width: 10.75rem;
-    height: 1.813rem;
-    
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    
+    position: absolute;
+    width: 24.82rem;
+    height: 3rem;
+    left: 1rem;
+    top: 0.508rem;   
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -136,14 +127,15 @@
 
     color: #C2C2C2;
     border: none;
+    outline: none;
 }
 
 .mail i {
     position: absolute;
     width: 1.5rem;
     height: 1.75rem;
-    left: 72.813rem;
-    top: 31.938rem;
+    left: 28.125rem;
+    top: 1.016rem; 
 
     font-family: 'Font Awesome 5 Free';
     font-style: normal;
@@ -159,7 +151,7 @@
     width: 31.25rem;
     height: 4.063rem;
     left: 44.375rem;
-    top: 37.313rem;
+    top: 36.688rem;
 
     background: #FFFFFF;
     border-radius: 1.25rem;
@@ -167,10 +159,10 @@
 
 .mdp input {
     position: absolute;
-    width: 10.75rem;
-    height: 1.813rem;
-    left: 45.75rem;
-    top: 31.875rem;
+    width: 24.82rem;
+    height: 3rem;
+    left: 1rem;
+    top: 0.508rem; 
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -179,14 +171,16 @@
     line-height: 1.813rem;
 
     color: #C2C2C2;
+    border: none;
+    outline: none;
 }
 
 .mdp i {
     position: absolute;
     width: 1.5rem;
     height: 1.75rem;
-    left: 72.813rem;
-    top: 31.938rem;
+    left: 28.125rem;
+    top: 1.016rem; 
 
     font-family: 'Font Awesome 5 Free';
     font-style: normal;
@@ -288,10 +282,10 @@
 
 .connection input {
     position: absolute;
-    width: 12.188rem;
-    height: 1.813rem;
-    left: 52.625rem;
-    top: 48.75rem;
+    width: 28.906rem;
+    height: 3rem;
+    left: 1rem;
+    top: 0.508rem; 
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -299,14 +293,32 @@
     font-size: 1.5rem;
     line-height: 1.813rem;
 
+    background-color: #32746D;
     color: #F7FCFF;
+    border: none;
+}
+
+.connection i {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.75rem;
+    left: 21.875rem;
+    top: 1.341rem;
+
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+
+    color: #fff;
 }
 
 .registration {
     position: absolute;
-    width: 24.75rem;
+    width: 28rem;
     height: 1.5rem;
-    left: 47.625rem;
+    left: 46rem;
     top: 53.125rem;
 
     font-family: 'Montserrat';
