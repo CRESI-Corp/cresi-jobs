@@ -1,31 +1,37 @@
 import { Link } from "react-router-dom";
-//import { UserActions } from "./navbar/navbarComponents"
-
-import "../styles/navbar/navbar.css";
 import React, { useState } from "react";
 
+import "../styles/navbar/navbar.css";
 import ico_head from "../assets/ico_head.png";
 
 const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="sidebar close">
+    <nav className={`sidebar ${isOpen ? "open" : "close"}`}>
       <header>
-      <div class="image-text">
-                <span class="image">
-                    <a href="#">
-                    <img src={ico_head} alt=""></img>
-                    </a>
-                </span>
+        <div className="image-text">
+          <span className="image">
+            <a href="#">
+              <img src={ico_head} alt="" />
+            </a>
+          </span>
 
-                <div class="text logo-text">
-                    <a href="#">
-                    <span class="profession">Deconnexion</span></a>
-                    <a href="#">
-                    <i class='bx bx-log-out icon' ></i></a>
-                </div>
-            </div>
+          <div className="text logo-text">
+            <a href="/connection">
+              <span className="profession">Deconnexion</span>
+            </a>
+            <a href="#">
+              <i className="bx bx-log-out icon"></i>
+            </a>
+          </div>
+        </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
+        <i className={`bx ${isOpen ? "bx-chevron-left" : "bx-chevron-right"} toggle`} onClick={toggleNavbar}></i>
       </header>
 
       <div className="menu-bar">
@@ -34,7 +40,6 @@ const Navbar: React.FC = () => {
             <li className="nav-link">
               <a href="/account">
                 <i className="bx bx-user icon"></i>
-
                 <span className="text nav-text">Mon compte</span>
               </a>
             </li>
