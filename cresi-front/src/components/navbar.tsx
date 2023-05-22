@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
           </span>
 
           <div className="text logo-text">
-            <a href="#">
+            <a href="/connection">
               <span className="profession">Deconnexion</span>
             </a>
             <a href="#">
