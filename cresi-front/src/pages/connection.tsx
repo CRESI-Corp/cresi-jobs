@@ -15,29 +15,32 @@ function connectionPage() {
             <div className="all">
                 <form action="" method="post" class="">
                     <h1 className="titre">Connexion</h1>
-                    <div className="">
-                        <div className="ent">
-                            <p class="">Connexion avec l'ENT</p>
-                            <img className='entlogo' src={ent}></img>
-                        </div>
-                        <div className="micro">
-                            <img className='micrologo' src={microsoft}></img>
+                        <div className='tiers'>
+                            <div className="ent">
+                                <p>Connexion avec l'ENT</p>
+                                <img className='entlogo' src={ent}></img>
+                            </div>
+                            <div className="micro">
+                                <div className='micrologo'>
+                                    <img src={microsoft}></img>
+                                </div>
+                                
+                            </div>
                         </div>
                         <div className="ou">
                             <p>ou</p>
                         </div>
                         <div className="mail">
-                            <input type="email" placeholder='Adresse email' className=''/>
+                            <input type="email" placeholder='Adresse email'/>
                             <i class='bx bxs-envelope'></i>
                         </div>
                         <div className='mdp'>
-                            <input type="password" placeholder='Mot de passe' className=""/>
+                            <input type="password" placeholder='Mot de passe'/>
                             <i class='bx bxs-lock-alt'></i>
                         </div>
-                    </div>
                     <div className='autre'>
                         <div className="souvenir">
-                            <input type="checkbox" name="rememberMe" id="rememberMe" placeholder='rememberMe' className=''/>
+                            <input type="checkbox" name="rememberMe" id="rememberMe" placeholder='rememberMe'/>
                             <label htmlFor="rememberMe" className="">Se souvenir de moi</label>
                         </div>
                         <Link to="/">
@@ -48,10 +51,12 @@ function connectionPage() {
                         
                     </div>
 
-                    <div className='connection'>
-                        <input type="button" value="Je me connecte" className=""/>
-                        <i class='bx bx-right-arrow-alt'></i>
-                    </div>
+                    <button className='connection'>
+                        <div className='connexion'>
+                            <p>Je me connecte</p>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </div>
+                    </button>
 
                     <Link to="/registration">
                         <div className="registration">
