@@ -1,5 +1,5 @@
 import React, { FormEvent, useRef, useState } from "react";
-import { FormInput, FormSelect, FormTextArea, FormButton } from "./formComponents"
+import { FormInput, FormSelect, FormTextArea, FormButton } from "./formComponents/formComponents"
 
 interface formValues {
     name: string;
