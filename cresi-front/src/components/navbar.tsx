@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
 
         <div className="bottom-content">
           <li className="">
-            <a href="#">
+            <a href="/contact">
               <i className="bx bx-paper-plane icon"></i>
               <span className="text nav-text">Nous contacter</span>
             </a>
