@@ -11,6 +11,8 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  
+
   return (
     <nav className={`sidebar ${isOpen ? "open" : "close"}`}>
       <header>
