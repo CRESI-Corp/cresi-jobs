@@ -5,6 +5,8 @@ import Navbar from "./components/navbar";
 import Contact from "./pages/contact";
 import Connection from './pages/connection'
 import Account from './pages/account'
+import Offers from './pages/offers'
+import Candidacy from './pages/candidacy'
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/connection' element={<Connection />} />
           <Route path='/account' element={<Account />} />
+          <Route path='/offers' element={<Offers />} />
+          <Route path='/candidacy' element={<Candidacy />} />
         </Routes>
       </div>
     </body>

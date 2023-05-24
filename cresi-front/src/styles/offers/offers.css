@@ -1,0 +1,37 @@
+.student-job-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 18px;
+    margin-bottom: 100px;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  
+  .location {
+    margin-bottom: 5px;
+  }
+  
+  .paid {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .date {
+    font-size: 12px;
+    color: gray;
+  }
+  

@@ -1,4 +1,4 @@
-function registration() {
+function candidacy() {
     return (
         <body>
         <h1 className="title">Page Candidatures</h1>
@@ -10,4 +10,4 @@ function registration() {
     );
 }
 
-export default registration
+export default candidacy

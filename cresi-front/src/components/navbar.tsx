@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
       <header>
         <div className="image-text">
           <span className="image">
-            <a href="#">
+            <a href="/">
               <img src={ico_head} alt="" />
             </a>
           </span>
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
             <a href="/connection">
               <span className="profession">Deconnexion</span>
             </a>
-            <a href="#">
+            <a href="/connection">
               <i className="bx bx-log-out icon"></i>
             </a>
           </div>
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
             </li>
 
             <li className="nav-link">
-              <a href="#">
+              <a href="/offers">
                 <i className="bx bx-file-find icon"></i>
                 <span className="text nav-text">Les offres d'emploi</span>
               </a>
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
 
         <div className="bottom-content">
           <li className="">
-            <a href="#">
+            <a href="/contact">
               <i className="bx bx-paper-plane icon"></i>
               <span className="text nav-text">Nous contacter</span>
             </a>
