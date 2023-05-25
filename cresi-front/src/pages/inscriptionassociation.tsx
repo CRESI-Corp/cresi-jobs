@@ -57,7 +57,7 @@ function inscriptionteacherPage() {
                                 <i class='bx bx-right-arrow-alt'></i>
                             </div>
                         </button>
-                        <Link to="/registration">
+                        <Link to="/connection">
                             <div className="registration">
                                 Déjà membre de la plateforme ? C'est par ici !
                             </div>
