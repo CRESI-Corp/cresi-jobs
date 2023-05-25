@@ -9,11 +9,19 @@ import Offers from './pages/offers'
 import Candidacy from './pages/candidacy'
 import InscriptionStudent from './pages/inscriptionStudent'
 
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
+
+
+
 function App() {
+  const location = useLocation();
+  const hideNavbar = location.pathname === "/connection" || location.pathname === "x"; // Vérifie si l'URL correspond à "/connection" ou "/account"
+
   return (
     <body>
       <header>
-        <Navbar />
+      {!hideNavbar && <Navbar />} {/* Condition pour afficher la navbar */}
       </header>
 
       <div className="Cresi">
