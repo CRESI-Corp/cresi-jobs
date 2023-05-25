@@ -7,6 +7,7 @@ import Connection from './pages/connection'
 import Account from './pages/account'
 import Offers from './pages/offers'
 import Candidacy from './pages/candidacy'
+import InscriptionStudent from './pages/inscriptionStudent'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/account' element={<Account />} />
           <Route path='/offers' element={<Offers />} />
           <Route path='/candidacy' element={<Candidacy />} />
+          <Route path='/inscriptionStudent' element={<InscriptionStudent />} />
         </Routes>
       </div>
     </body>
