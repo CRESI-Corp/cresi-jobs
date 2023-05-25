@@ -16,7 +16,7 @@ import { useLocation } from "react-router-dom";
 
 function App() {
   const location = useLocation();
-  const hideNavbar = location.pathname === "/connection" || location.pathname === "x"; // Vérifie si l'URL correspond à "/connection" ou "/account"
+  const hideNavbar = location.pathname === "/connection" || location.pathname === "/inscriptionStudent"; // Vérifie si l'URL correspond à "/connection" ou "/account"
 
   return (
     <body>
