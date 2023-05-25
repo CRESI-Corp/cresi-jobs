@@ -4,7 +4,7 @@ import '../styles/inscription/inscription.css'
 import microsoft from "../assets/microsoft.png"
 import ent from "../assets/moodle.png"
 
-function inscriptionstudentPage() {
+function inscriptionteacherPage() {
     return (
         <body>
             <div className="all">
@@ -39,6 +39,10 @@ function inscriptionstudentPage() {
                                 <input type="email" placeholder='Adresse email'/>
                                 <i class='bx bxs-envelope'></i>
                             </div>
+                            <div className="ChampRenseignemants">
+                                <input type="" placeholder='Campus'/>
+                                <i class='bx bxs-bank'></i>
+                            </div>
                             <div className='ChampRenseignemants'>
                                 <input type="password" placeholder='Mot de passe'/>
                                 <i class='bx bxs-lock-alt'></i>
@@ -66,4 +70,4 @@ function inscriptionstudentPage() {
 
 }
 
-export default inscriptionstudentPage
+export default inscriptionteacherPage

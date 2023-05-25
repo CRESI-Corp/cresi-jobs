@@ -4,27 +4,13 @@ import '../styles/inscription/inscription.css'
 import microsoft from "../assets/microsoft.png"
 import ent from "../assets/moodle.png"
 
-function inscriptionstudentPage() {
+function inscriptionteacherPage() {
     return (
         <body>
             <div className="all">
                 <div className='zoom'>
                     <form action="" method="post" class="">
                         <h1 className="titre">Inscription</h1>
-                            <div className='tiers'>
-                                <div className="ent">
-                                    <p>Connexion avec l'ENT</p>
-                                    <img className='entlogo' src={ent}></img>
-                                </div>
-                                <div className="micro">
-                                    <div className='micrologo'>
-                                        <img src={microsoft}></img>
-                                    </div>                             
-                                </div>
-                            </div>
-                            <div className="ou">
-                                <p>ou</p>
-                            </div>
                             <div className='name'>
                                 <div className="ChampNom">
                                     <input type="" placeholder='Nom'/>
@@ -38,6 +24,24 @@ function inscriptionstudentPage() {
                             <div className="ChampRenseignemants">
                                 <input type="email" placeholder='Adresse email'/>
                                 <i class='bx bxs-envelope'></i>
+                            </div>
+                            <div className='tiers'>
+                                <div className="ent">
+                                    <p>L'association est déclarée</p>
+                                </div>
+                                <div className="micro">
+                                    <div className='micrologo'>
+                                        <label htmlFor="declare" className='declare'>
+                                            <input type="checkbox" name="declare" id="declare"/>
+                                            <span><i class='bx bx-check'></i></span>
+                                        </label>
+                                        
+                                    </div>                             
+                                </div>
+                            </div>
+                            <div className="ChampRenseignemants">
+                                <input type="" placeholder='RNA'/>
+                                <i class='bx bx-hash'></i>
                             </div>
                             <div className='ChampRenseignemants'>
                                 <input type="password" placeholder='Mot de passe'/>
@@ -66,4 +70,4 @@ function inscriptionstudentPage() {
 
 }
 
-export default inscriptionstudentPage
+export default inscriptionteacherPage

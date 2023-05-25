@@ -7,10 +7,6 @@ import ent from "../assets/moodle.png"
 function connectionPage() {
     return (
         <body>
-
-            {/**
-                if connection page do not display navbar 
-             */}
             <div className="all">
                 <form action="" method="post" class="">
                     <h1 className="titre">Connexion</h1>

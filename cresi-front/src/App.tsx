@@ -8,6 +8,9 @@ import Account from './pages/account'
 import Offers from './pages/offers'
 import Candidacy from './pages/candidacy'
 import Inscriptionstudent from './pages/inscriptionstudent'
+import Inscriptionteacher from './pages/inscriptionteacher'
+import Inscriptioncompany from './pages/inscriptioncompany'
+import Inscriptionassociation from './pages/inscriptionassociation'
 
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
@@ -16,7 +19,7 @@ import { useLocation } from "react-router-dom";
 
 function App() {
   const location = useLocation();
-  const hideNavbar = location.pathname === "/connection" || location.pathname === "/inscriptionstudent"; // Vérifie si l'URL correspond à "/connection" ou "/account"
+  const hideNavbar = location.pathname === "/connection" || location.pathname === "/inscriptionstudent" || location.pathname === "/inscriptionteacher" || location.pathname === "/inscriptioncompany" || location.pathname === "/inscriptionassociation"; // Vérifie si l'URL correspond à "/connection" ou "/account"
 
   return (
     <body>
@@ -34,6 +37,9 @@ function App() {
           <Route path='/offers' element={<Offers />} />
           <Route path='/candidacy' element={<Candidacy />} />
           <Route path='/inscriptionstudent' element={<Inscriptionstudent />} />
+          <Route path='/inscriptionteacher' element={<Inscriptionteacher />} />
+          <Route path='/inscriptioncompany' element={<Inscriptioncompany />} />
+          <Route path='/inscriptionassociation' element={<Inscriptionassociation />} />
         </Routes>
       </div>
     </body>

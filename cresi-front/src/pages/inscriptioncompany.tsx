@@ -4,40 +4,24 @@ import '../styles/inscription/inscription.css'
 import microsoft from "../assets/microsoft.png"
 import ent from "../assets/moodle.png"
 
-function inscriptionstudentPage() {
+function inscriptioncompanyPage() {
     return (
         <body>
             <div className="all">
                 <div className='zoom'>
                     <form action="" method="post" class="">
                         <h1 className="titre">Inscription</h1>
-                            <div className='tiers'>
-                                <div className="ent">
-                                    <p>Connexion avec l'ENT</p>
-                                    <img className='entlogo' src={ent}></img>
-                                </div>
-                                <div className="micro">
-                                    <div className='micrologo'>
-                                        <img src={microsoft}></img>
-                                    </div>                             
-                                </div>
-                            </div>
-                            <div className="ou">
-                                <p>ou</p>
-                            </div>
-                            <div className='name'>
-                                <div className="ChampNom">
-                                    <input type="" placeholder='Nom'/>
-                                    <i class='bx bx-pulse'></i>
-                                </div>
-                                <div className="ChampNom">
-                                    <input type="" placeholder='Prénom'/>
-                                    <i class='bx bx-pulse'></i>
-                                </div>
+                            <div className="ChampRenseignemants">
+                                <input type="" placeholder="Nom de l'entreprise"/>
+                                <i class='bx bx-pulse'></i>
                             </div>
                             <div className="ChampRenseignemants">
                                 <input type="email" placeholder='Adresse email'/>
                                 <i class='bx bxs-envelope'></i>
+                            </div>
+                            <div className="ChampRenseignemants">
+                                <input type="" placeholder='SIRET'/>
+                                <i class='bx bxs-school' ></i>
                             </div>
                             <div className='ChampRenseignemants'>
                                 <input type="password" placeholder='Mot de passe'/>
@@ -59,11 +43,11 @@ function inscriptionstudentPage() {
                             </div>
                         </Link>
                     </form>
-                   </div>
-               </div>
+                </div>
+            </div>
         </body>
     );
 
 }
 
-export default inscriptionstudentPage
+export default inscriptioncompanyPage
