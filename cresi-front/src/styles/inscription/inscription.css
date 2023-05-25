@@ -17,7 +17,7 @@
     font-size: 4rem;
     line-height: 4.875rem;
     color: #34495E;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .tiers {
@@ -85,6 +85,49 @@
     margin-bottom: 1rem;
 }
 
+.name {
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    margin-bottom: 2rem;
+}
+
+.ChampNom { 
+    display: flex;   
+    width: auto;
+    height: 4.063rem;
+    background: #FFFFFF;
+    border-radius: 1.25rem;
+    padding: 0.625rem 1.375rem;
+}
+
+.ChampNom input {
+    width: 8.15rem;
+    height: auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 1.813rem;
+    color: #C2C2C2;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+}
+
+.ChampNom i {    
+    width: auto;
+    height: 1.75rem;
+    margin-left: 2.75rem;
+    margin-top: 4%;
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    color: #34495E;
+}
+
 .ChampRenseignemants { 
     display: flex;   
     width: 100%;
@@ -92,7 +135,7 @@
     background: #FFFFFF;
     border-radius: 1.25rem;
     padding: 0.625rem 1.375rem;   
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .ChampRenseignemants input {
@@ -122,57 +165,7 @@
     color: #34495E;
 }
 
-.autre {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.625rem;  
-    width: 100%;
-    height: 1.25rem;;
-    margin-bottom: 1rem;
-}
-
-.souvenir {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 11.563rem;
-    height: 1.25rem;
-}
-
-.souvenir input {
-    box-sizing: border-box;
-    width: 1.25rem;
-    height: 1.25rem;
-    border: 0.063rem solid #34495E;
-    border-radius: 0.313rem;
-}
-
-.souvenir label {
-    width: 9.688rem;
-    height: 1.25rem;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    color: #34495E;
-    margin-left: 0.5rem;
-}
-
-.oublie {
-    width: 11rem;
-    height: 1.25rem;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    color: #32746D;
-}
-
-.connection {
+.create {
     display: flex;
     width: 100%;
     height: 4.063rem;
@@ -184,13 +177,13 @@
     border-radius: 1.25rem;
 }
 
-.connexion {
+.creation {
     display: flex;
     margin-top: 3%;
     margin-left: 28.2%;
 }
 
-.connexion p {
+.creation p {
     width: auto;
     height: 1.75rem;
     font-family: 'Montserrat';
@@ -201,7 +194,7 @@
     color: #fff;
 }
 
-.connexion i {    
+.creation i {    
     width: 1.5rem;
     height: 1.75rem;
     font-family: 'Font Awesome 5 Free';
