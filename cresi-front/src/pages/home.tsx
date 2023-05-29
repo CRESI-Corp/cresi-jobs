@@ -12,8 +12,11 @@ function connexion() {
 
                 <div className="Homepage_Connexion">
                     <input type="button" /> Connexion
+                </div>
+                <div className="Homepage_Inscription">
                     <input type="button" /> Inscription
                 </div>
+
             </div>
         </body>
     );

@@ -27,6 +27,23 @@
     background: #32746D;
     float: right;
     margin-top: 2.5rem;
+    margin-right: 5rem;
+  }
+  .Homepage_Inscription
+  {
+    flex: 1; /* Occupera 50% de l'espace disponible */
+    font-family: 'Montserrat';
+    padding: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+    line-height: 1.813rem;
+    text-align: center;
+    background: #F7FCFF;
+    float: right;
+    margin-top: 2.5rem;
     margin-right: 20rem;
   }
   
