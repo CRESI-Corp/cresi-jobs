@@ -1,0 +1,60 @@
+.Container {
+  display: flex;
+}
+
+.Description {
+  flex: 1;
+  /* Occupera 50% de l'espace disponible */
+  margin-top: 20px;
+  text-align: left;
+  font-family: 'Montserrat';
+  font-style: normal;
+  float: left;
+  width: 50%;
+  height: 120;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.Homepage_Connexion {
+  flex: 1;
+  /* Occupera 50% de l'espace disponible */
+  padding: 5px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.813rem;
+  line-height: 1.813rem;
+  text-align: center;
+  background: #32746D;
+  float: right;
+  margin-top: 2.5rem;
+  margin-right: 12.5rem;
+  border-radius: 0.5rem;
+  color: #34495E;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  color: #34495E;
+  font-size: 80px;
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 768px) {
+
+  .Description,
+  .Homepage_Connexion {
+    text-align: center;
+  }
+
+  .Homepage_Connexion button {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
