@@ -15,6 +15,61 @@
     --tran-05: all 0.3s ease;
 }
 
+.hub {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hub-header {
+    padding-top: 1rem;
+    display: flex;
+    min-width: 100%;
+    height: 10%;
+    background-color: #fff;
+}
+
+.hub-search-bar {
+    display: flex;
+    width: 35rem;
+    height: auto;
+    background-color: var(--toggle-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.hub-tuille {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0 2rem 0;
+}
+
+.hub-tuille-cresi {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    
+}
+
+.hub-tuille-news {
+    width: 42rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.hub-tuille-calendar {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
 .hub-bar {
     display: flex;
     flex-direction: column;

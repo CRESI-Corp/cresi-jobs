@@ -1,9 +1,47 @@
 import '../styles/hub/hub.css'
 import {Link} from "react-router-dom"
 import cresihub from "../assets/cresihub.svg";
+import Calendar from "../components/Calendar/Calendar";
 
 function hub() {
     return (
+        <body className='hub'>
+            <header className='hub-header'>
+                <div className='hub-logo'>
+                    <img src={cresihub} alt="" />
+                </div>
+                <div className='hub-search'>
+                    <input type="text" placeholder='Recherche' className='hub-search-bar'/>
+                </div>
+            </header>
+            <div className='hub-tuille'>
+                <div className='hub-tuille-cresi'>
+                    CRESI JOBS
+                </div>
+                <div className='hub-tuille-cresi'>
+                    CRESI ASSO
+                </div>
+                <div className='hub-tuille-cresi'>
+                    COMING SOON
+                </div>
+            </div>
+            <div className='hub-tuille'>
+                <div className='hub-tuille-news'>
+                    NEWSLETTER
+                </div>
+                <div className='hub-tuille-calendar'>
+                    <Calendar />
+                </div>
+            </div>
+            
+        </body>
+    );
+
+}
+
+export default hub
+
+{/*
         <div className="hub-bar">
             <div className='hub-logo'>
                 <img src={cresihub} alt="" />
@@ -55,8 +93,4 @@ function hub() {
                 </Link>
             </div>
         </div>
-    );
-
-}
-
-export default hub
+    */}
