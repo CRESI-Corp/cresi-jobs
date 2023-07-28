@@ -1,0 +1,10 @@
+.news {
+    display: flex;
+    border-radius: 0.8rem;
+    border-color: black;
+    border: 1px solid;
+    height: 2rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    padding-left: 0.5rem;
+}

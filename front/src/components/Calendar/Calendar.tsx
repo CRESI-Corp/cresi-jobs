@@ -90,8 +90,7 @@ const Calendar: React.FC = () => {
         <tbody>{getCalendarDays()}</tbody>
       </table>
       <div className="selected-date">
-        <p>Date sélectionnée : {selectedDate ? selectedDate.toLocaleDateString('fr-FR') : ''}</p>
-        <p>Heure sélectionnée : {selectedTime}</p>
+        <p>Date & Heure sélectionnée : {selectedDate ? selectedDate.toLocaleDateString('fr-FR') : ''} {selectedTime}</p>
       </div>
       <div>
         <p>Choisir une heure :</p>
