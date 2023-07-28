@@ -1,0 +1,19 @@
+.TitreJob{
+    color: var(--primary, #34495E);
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;  
+      
+}
+
+
+
+
+color: var(--subtext, #C2C2C2);
+font-family: Montserrat;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;

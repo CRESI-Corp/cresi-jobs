@@ -13,10 +13,10 @@ import Contact from "./pages/contact";
 import Connection from "./pages/connection";
 import Account from "./pages/account";
 import Hub from "./pages/hub";
-
+import NotConnecter_home from "./pages/NotConnected_Home";
 function App() {
   const location = useLocation();
-  const excludedPaths = ["/connection", "/hub"]; // Add other paths you want to exclude from the navbar
+  const excludedPaths = ["/connection", "/hub", "/NotConnecter_home"]; // Add other paths you want to exclude from the navbar
 
   const shouldRenderNavbar = !excludedPaths.includes(location.pathname);
 
@@ -36,6 +36,8 @@ function App() {
           <Route path="/connection" element={<Connection />} />
           <Route path="/account" element={<Account />} />
           <Route path="/hub" element={<Hub />} />
+          <Route path="/NotConnecter_home" element={<NotConnecter_home/>} />
+
         </Routes>
       </div>
     </body>
