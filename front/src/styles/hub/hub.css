@@ -284,7 +284,7 @@
     padding: 5px;
     background-color: var(--color-light);
     /*top: 117%;*/ /*70px*/
-    border-radius: 0 1.5rem 1.5rem 0;/**/
+    border-radius: 1.5rem; /*0 1.5rem 1.5rem 0;*/
     left: 0;
     width: max-content;
     /*height: 1280%;*/
