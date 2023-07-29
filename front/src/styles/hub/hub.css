@@ -17,18 +17,18 @@
 }
 
 .hub {
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
 .hub-header {
-    padding-top: 1rem;
     display: flex;
     min-width: 100%;
     height: 10%;
+    align-items: center;
     /*background-color: #fff;*/
 }
 
@@ -51,7 +51,7 @@
     height: 3rem;
     align-items: center;
     margin-top: 0.25rem;
-    margin-right: 3rem;
+    
 }
 
 .hub-search-icon {
@@ -75,21 +75,23 @@
 .hub-tuille {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 2.5%;
     margin: 0 2rem 0;
+    width: 100%;
+    height: 40%;
 }
 
 .hub-tuille-cresi {
-    width: 15rem;
-    height: 15rem;
+    width: 30%;
+    height: 100%;
     border-radius: 1rem;
     background-color: #fff;
     
 }
 
 .hub-tuille-news {
-    width: 32rem;
-    height: 15rem;
+    width: 62.5%;
+    height: 100%;
     border-radius: 1rem;
     background-color: #fff;
     text-align: left;
@@ -101,9 +103,26 @@
   padding-left: 2rem;
 }
 
+.hub-tuille-propos-title {
+  color: var(--icon-color);
+  text-align: center;
+  word-spacing: 0.75rem;
+}
+
+.img-corps {
+  width: 100%;
+  height: 90%;
+  padding: 1rem;
+}
+
+.image-corps {
+  width: 100%;
+  height: 100%;
+}
+
 .hub-tuille-calendar {
-    width: 15rem;
-    height: 15rem;
+    width: 30%;
+    height: 100%;
     border-radius: 1rem;
     background-color: #fff;
 }
@@ -111,8 +130,8 @@
 .hub-bar {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    height: 90%;
+    width: max-content;
+    min-height: 100%;
     background-color: #fff;
     border-radius: 0 1.5rem 1.5rem 0;
     padding: 1rem;
@@ -125,20 +144,20 @@
 }
 
 .hub-logo {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .hub-logo img {
     width: 50%;
-    height: auto;
-    margin-bottom: 2rem;
 }
 
 .hub-menu {
-    padding: 1rem 0.5rem 1rem;
+    /*margin: 1rem 0.5rem 1rem;*/
     text-align: left;
     border-radius: 1rem;
     color: var(--icon-color);
+    width: fit-content;
 }
 
 .hub-menu i {
@@ -153,6 +172,45 @@
     color: var(--body-color);
     transition: 0.5s;
     width: fit-content;/**/
+}
+
+.hub-menu:hover > .link-hub {
+  color: var(--body-color);
+}
+
+.link-hub {
+  color: var(--icon-color);
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+  align-items: center;
+  display: flex;
+  padding: 0.25rem 1.25rem 0.25rem 1.25rem;
+}
+
+.link-hub:visited {
+  color: var(--icon-color);
+}
+
+.link-hub:hover {
+  color: var(--body-color);
+}
+
+.link-hub:visited + .link-hub:hover {
+  color: var(--body-color);
+}
+
+.link-propos {
+  z-index: 2;
+  position: relative;
+  bottom: 15%;
+  background-color: var(--icon-color);
+  color: var(--sidebar-color);
+  /*width: fit-content;*/
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  justify-content: center;
+  width: max-content;
 }
 
 .hub-deco { /**/
@@ -193,7 +251,7 @@
     line-height: 1.5rem;
     height: 4.063rem;
     border-radius: 1.25rem;
-    width: 100%;
+    width: max-content;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -225,11 +283,11 @@
     position: absolute;
     padding: 5px;
     background-color: var(--color-light);
-    top: 117%; /*70px*/
+    /*top: 117%;*/ /*70px*/
     border-radius: 0 1.5rem 1.5rem 0;/**/
     left: 0;
-    width: auto;
-    height: 1280%;/**/
+    width: max-content;
+    /*height: 1280%;*/
     /*border-radius: 1.25rem;*/
     display: block;
     box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
@@ -246,10 +304,10 @@
     
   }
 
-  /*.dropdown:checked ~ */.hub-tuille {
+  /*.dropdown:checked ~ *//*.hub-tuille {*/
     /*filter: blur(10px);
     margin-left: 22%;*/
-  }
+  /*}*/
 
   .section-dropdown:before {
     position: absolute;
