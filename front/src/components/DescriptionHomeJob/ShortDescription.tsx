@@ -1,8 +1,10 @@
-
+import "./ShortDescription.css"
 
 function Description() {
     return(
-    <p> Courte description du site</p>
+        <div className="description-container">
+        <p>Courte description du site</p>
+        </div>
     );
 }
 

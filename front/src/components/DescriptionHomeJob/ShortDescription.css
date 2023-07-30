@@ -1,0 +1,18 @@
+
+
+.Textbox
+{color: var(--subtext, #C2C2C2);
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;}
+
+.description-container {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.description-container {
+    text-align: center;
+  }
