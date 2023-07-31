@@ -1,14 +1,3 @@
-.TitreJob{
-    color: var(--primary, #34495E);
-    font-family: Montserrat;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 100;
-    line-height: normal;  
-    top: 50%;
-    left: 50%;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -16,16 +5,84 @@ body {
     justify-content: flex-start;
     height: 100vh;
     margin: 0;
-  }
-  
-  .TitreJob {
-    text-align: center;
-  }
+    overflow: auto;
+}
 
-  .description-buttons-container {
+.TitreJob {
+    text-align: center;
+    /* Other styles as before */
+}
+
+.description-buttons-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 2.5rem;
-  }
-  
+    width: 80%; /* adjust this to change the spacing between Description and ButtonsComponent */
+    margin: auto;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* adjust this to change the spacing between the h2 and the tiles */
+    margin: auto;
+}
+
+.tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tiles-container > * {
+    flex-basis: calc(25% - 1em);
+    margin: 0.5em;
+    max-width: 300px;
+    margin-left: 0rem;
+}
+
+.section-container-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; /* adjust this to change the spacing between the h2 and the tiles */
+  margin: auto;
+}
+
+.tiles-container-small {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25rem;
+}
+
+.tiles-container-small > * {
+  flex-basis: calc(50% - 1em); /* 50% for two items per row, subtracting the margin space */
+  margin: 0.5em;
+  max-width: 300px;
+}
+
+.bottom-texte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; /* adjust this to change the spacing between the h2 and the tiles */
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+    .tiles-container > * {
+        flex-basis: calc(33.33% - 1em);
+    }
+}
+
+@media (max-width: 800px) {
+    .tiles-container > * {
+        flex-basis: calc(50% - 1em);
+    }
+}
+
+@media (max-width: 500px) {
+    .tiles-container > * {
+        flex-basis: calc(100% - 1em);
+    }
+}

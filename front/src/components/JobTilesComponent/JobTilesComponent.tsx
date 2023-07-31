@@ -1,18 +1,15 @@
-
+import Tile from '../Tile/Tile';
 import './JobTilesComponent.css';
 
 function JobTilesComponent() {
-    const jobs = ["Comptabilité", "Ingénieur", "Médecine", "Architecture"];
-
     return (
         <div className="job-tiles-container">
             <h2>Trouver votre futur stage :</h2>
             <div className="tiles-container">
-                {jobs.map((job, index) => (
-                    <div key={index} className="tile">
-                        {job}
-                    </div>
-                ))}
+                <Tile title="Comptabilité" />
+                <Tile title="Ingénieur" />
+                <Tile title="Médecine" />
+                <Tile title="Architecture" />
             </div>
         </div>
     );

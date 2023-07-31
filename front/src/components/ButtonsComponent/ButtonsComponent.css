@@ -1,27 +1,67 @@
-.buttons-container {
+  .hub-btn-inscr-co {
+    background-color: var(--primary-color);
+    flex-direction: row;
     display: flex;
     justify-content: center;
+    width: fit-content;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 1rem;
     align-items: center;
-    gap: 2.5rem;
-    width: 30.125rem;
-    height: 3.625rem;
-    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
   }
-  
-  .button {
-    border-radius: 1.25rem;
-    background: var(--secondary, #32746D);
+
+  .hub-btn-co {
+    background-color: var(--sidebar-color);
+    border-radius: 1rem;
+    color: var(--primary-color);
   }
-  
-  .Connexion {
+
+  .hub-btn-co > .hub-btn-connexion {
+    color: var(--primary-color);
+  }
+
+  .hub-btn-co:hover {
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    color: var(--sidebar-color);
+    outline: 1px solid;
+  }
+
+  .hub-btn-co:hover > .hub-btn-connexion {
+    color: var(--sidebar-color);
+    border-color: var(--sidebar-color);
+  }
+
+  .hub-btn-inscr {
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    color: var(--sidebar-color);
+  }
+
+  .hub-btn-inscr > .hub-btn-inscription {
+    color: var(--sidebar-color);
+  }
+
+  .hub-btn-inscr:hover {
+    background-color: var(--sidebar-color);
+    border-radius: 1rem;
+    color: var(--primary-color);
+  }
+
+  .hub-btn-inscr:hover > .hub-btn-inscription {
+    color: var(--primary-color);
+  }
+
+  .hub-btn-inscription {
     display: flex;
-    width: 15.75rem;
-    height: 2.375rem;
-    padding: 0.625rem 3.125rem;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 1.25rem;
-    background: #FFF;
+    width: 100%;
+    padding: 0.5rem;
   }
+
+  .hub-btn-connexion {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
   

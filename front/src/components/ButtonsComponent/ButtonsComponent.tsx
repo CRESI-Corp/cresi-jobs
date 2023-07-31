@@ -1,15 +1,24 @@
 
 import './ButtonsComponent.css';
+import {Link} from "react-router-dom"
 
 function ButtonsComponent() {
     return (
-        <div className="buttons-container">
-            <button class='Connexion' type='button'>Connexion</button>
-            <button class='Inscription' type='button'>Inscription</button>
-
-
-        </div>
+        <div className='hub-btn-inscr-co'>
+                    <div className='hub-btn-inscr'>
+                        <Link to="/hub" className='hub-btn-inscription'>
+                            Inscription
+                        </Link>
+                    </div>
+                    <div className='hub-btn-co'>
+                        <Link to="/hub" className='hub-btn-connexion'>
+                            Connexion
+                        </Link>
+                    </div>
+                </div>
     );
 }
 
 export default ButtonsComponent
+
+

@@ -1,0 +1,12 @@
+.tile-name {
+    width: 16.8125rem;
+    height: 4.375rem;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5em;
+}
