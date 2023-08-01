@@ -28,7 +28,7 @@ function connectionPage() {
                         </div>
                         <div className="mail">
                             <input type="email" placeholder='Adresse email' className=''/>
-                            <i className="fa-solid fa-user-secret"></i>
+                            <i className="fa-solid"></i>
                         </div>
                         <div className='mdp'>
                             <input type="password" placeholder='Mot de passe' className=""/>

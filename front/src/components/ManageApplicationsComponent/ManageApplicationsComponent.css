@@ -1,0 +1,26 @@
+.manage-applications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .content-container h2,
+  .content-container ul {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .content-container ul {
+    list-style-type: none;
+  }
+  

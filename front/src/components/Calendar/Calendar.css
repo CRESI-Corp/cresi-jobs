@@ -1,0 +1,34 @@
+.calendar {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25rem;
+}
+
+.btn-fleche {
+    background-color: var(--color-skin);
+    border: none;
+    border-radius: 25%;
+    margin: 0 5px 0;
+}
+
+.header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.mois {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.heure {
+    display: block;
+    margin: auto;
+    background-color: var(--color-light);
+    border: none;
+    border-radius: 1.25rem;
+}
